@@ -82,6 +82,7 @@ buildpkg -n -p libsailfishkeyprovider-git
 buildpkg -n -p nemo-qml-plugin-systemsettings-git
 buildpkg -n -p qt5-lipstick-git
 buildpkg -n -p lipstick-glacier-home-git
+buildpkg -n -p glacier-wayland-session
 
 # need to be clarified
 
