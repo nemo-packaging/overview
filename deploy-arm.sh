@@ -28,7 +28,7 @@ cd nemo-packaging
 ## manjaro-chroot /var/lib/manjaro-arm-tools/pkg/aarch64/ /root/sync.sh
 
 echo "Fix script manually first"
-exit
+exit 1
 ## Workaround:
 ## sudo vim /usr/share/manjaro-arm-tools/lib/functions.sh
 ### add i to makepkg
