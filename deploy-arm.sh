@@ -1,16 +1,7 @@
 #!/bin/bash
 
-# install gitim tool to pull all the repos from the project
-# https://aur.archlinux.org/packages/python-gitim-git/
-yaourt -S python-gitim-git
-
-# get nemo-packaging repos (~58 repos currently)
-python -m gitim --org nemo-packaging --dest /path/to/clone/repositories
-
 # install manjaro-tools
 # https://wiki.manjaro.org/index.php?title=Manjaro-tools
-
-yaourt -S manjaro-arm-tools
 
 # view commands
 # the default deploy path is: /var/cache/manjaro-arm-tools/pkg/aarch64

@@ -1,19 +1,9 @@
 #!/bin/bash
 
-# install gitim tool to pull all the repos from the project
-# https://aur.archlinux.org/packages/python-gitim-git/
-yaourt -S python-gitim-git
+PROJECT_REPOS_PATH=https://github.com/nemo-packaging/
 
-# get nemo-packaging repos (~58 repos currently)
-python -m gitim --org nemo-packaging --dest /path/to/clone/repositories
-
-# install manjaro-tools
-# https://wiki.manjaro.org/index.php?title=Manjaro-tools
-
-yaourt -S manjaro-tools-pkg
-
-# check build environment state
-buildpkg -q
+# create project directory
+mkdir -p nemo-packaging
 
 # enter the project
 cd nemo-packaging
@@ -88,4 +78,4 @@ buildpkg -n -p glacier-wayland-session
 
 buildpkg -n -p qt5-profile-git
 buildpkg -n -p qt5-around-git
-buildpkg -n -p sailfish-access-control-qt5-git 
+buildpkg -n -p sailfish-access-control-qt5-git
